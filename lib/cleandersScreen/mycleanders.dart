@@ -20,6 +20,7 @@ import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import '../components/const.dart';
 import '../components/global_componnets.dart';
 import '../screens/ekteran_screen.dart';
+import '../screens/fasoul_image_screen.dart';
 
 class Cleanders extends StatefulWidget {
   @override
@@ -129,8 +130,7 @@ class _CleandersState extends State<Cleanders> {
                 height: 40,
               ),
               Container(
-                height: 330,
-                width: 300,
+                width: 300.w,
                 decoration: BoxDecoration(
                   border: Border.all(width: 2, color: Colors.white),
                   borderRadius: BorderRadius.circular(20),
@@ -182,6 +182,34 @@ class _CleandersState extends State<Cleanders> {
                             ),
                             child: Text(
                               "مشاهدة صور النجوم",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14.sp,
+                                fontWeight: FontWeight.w500,
+                                fontFamily: "almarai",
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, bottom: 20),
+                      child: InkWell(
+                        onTap: () {
+                          To(context, FasoulImageScreen());
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 40,
+                            decoration: BoxDecoration(
+                              color: item,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Text(
+                              "جدول فصول السنة",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 14.sp,

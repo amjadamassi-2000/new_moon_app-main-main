@@ -35,11 +35,8 @@ class _EkteranItemState extends State<EkteranItem> {
       }
 
       if (widget.num == 5) {
-        return Color(0xfff3e779);
+        return Color(0xffa3a434);
       }
-
-
-
     }
 
     return Padding(
@@ -72,4 +69,3 @@ class _EkteranItemState extends State<EkteranItem> {
     );
   }
 }
-
